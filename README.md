@@ -9,8 +9,9 @@ I highly recommend you to use CocoaPods for installing this category.
 
 ###CocoaPods
 
-```ruby
-pod 'SecureNSUserDefaults', '~> 1.0.0'```
+```objective-c
+pod 'SecureNSUserDefaults', '~> 1.0.0'
+```
 
 ###Manual
 1. Copy the files *NSUserDefaults+SecureAdditions.h* and *NSUserDefaults+SecureAdditions.h* into your project;
