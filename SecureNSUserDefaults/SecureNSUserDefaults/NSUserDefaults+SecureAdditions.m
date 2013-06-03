@@ -53,7 +53,7 @@ static NSString *_secret = nil;
 	if([object isKindOfClass:[NSNumber class]]) {
 		return [object floatValue];
 	} else {
-		return NO;
+		return 0.f;
 	}
 }
 
@@ -63,7 +63,7 @@ static NSString *_secret = nil;
 	if([object isKindOfClass:[NSNumber class]]) {
 		return [object integerValue];
 	} else {
-		return NO;
+		return 0;
 	}
 }
 
@@ -98,7 +98,7 @@ static NSString *_secret = nil;
 	if([object isKindOfClass:[NSNumber class]]) {
 		return [object doubleValue];
 	} else {
-		return NO;
+		return 0;
 	}
 }
 
