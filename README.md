@@ -9,7 +9,9 @@ I highly recommend you to use CocoaPods for installing this category.
 
 ###CocoaPods
 
-```objective-c
+**NOT YET AVAILABLE!**
+
+```ruby
 pod 'SecureNSUserDefaults', '~> 1.0.0'
 ```
 
