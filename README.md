@@ -13,9 +13,16 @@ I highly recommend you to use CocoaPods for installing this category.
 pod 'SecureNSUserDefaults', '~> 1.0.0'
 ```
 
+Import the header file everywhere you want to use SecureNSUserDefaults by placing te following code in the top of your file:
+
+```objective-c
+#import <SecureNSUserDefaults/NSUserDefaults+SecureAdditions.h>
+```
+
 ###Manual
 1. Copy the files *NSUserDefaults+SecureAdditions.h* and *NSUserDefaults+SecureAdditions.h* into your project;
 2. Install [CocoaSecurity](https://github.com/kelp404/CocoaSecurity).
+3. Import NS
 
 ##Usage
 
