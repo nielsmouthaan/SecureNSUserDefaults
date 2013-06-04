@@ -21,8 +21,8 @@ Import the header file everywhere you want to use SecureNSUserDefaults by placin
 
 ###Manual
 1. Copy the files *NSUserDefaults+SecureAdditions.h* and *NSUserDefaults+SecureAdditions.h* into your project;
-2. Install [CocoaSecurity](https://github.com/kelp404/CocoaSecurity).
-3. Import NS
+2. Install [CocoaSecurity](https://github.com/kelp404/CocoaSecurity);
+3. Import *NSUserDefaults+SecureAdditions.h* everywhere you need it.
 
 ##Usage
 
