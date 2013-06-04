@@ -1,6 +1,6 @@
 #SecureNSUserDefaults
 
-NSUserDefaults category for iOS and Mac OS X with additional methods to securely save data using strong AES 356-bit encryption.
+NSUserDefaults category for iOS and Mac OS X with additional methods to securely save data using strong AES encryption.
 
 NSUserDefaults is a great way to store simple data in a persistent way. However, information is stored unencrypted and can easily be read by human beings (e.g. with [iExplorer](http://www.macroplant.com/iexplorer/)). If you want particular information to be stored in a secure way, making it really hard for users to see the actual content, SecureNSUserDefaults might be what you're looking for.
 
