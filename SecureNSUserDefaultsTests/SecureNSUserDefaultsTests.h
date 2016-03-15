@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 Niels Mouthaan. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 
-@interface SecureNSUserDefaultsTests : SenTestCase
+@interface SecureNSUserDefaultsTests : XCTestCase
 
 @end

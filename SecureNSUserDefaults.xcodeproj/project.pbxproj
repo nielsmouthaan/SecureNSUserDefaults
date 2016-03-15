@@ -17,7 +17,6 @@
 		A0FC65B8175D0BDF004620EB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A0FC65B7175D0BDF004620EB /* Default.png */; };
 		A0FC65BA175D0BDF004620EB /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0FC65B9175D0BDF004620EB /* Default@2x.png */; };
 		A0FC65BC175D0BDF004620EB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0FC65BB175D0BDF004620EB /* Default-568h@2x.png */; };
-		A0FC65C4175D0BDF004620EB /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0FC65C3175D0BDF004620EB /* SenTestingKit.framework */; };
 		A0FC65C5175D0BDF004620EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0FC65A5175D0BDE004620EB /* UIKit.framework */; };
 		A0FC65C6175D0BDF004620EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0FC65A7175D0BDE004620EB /* Foundation.framework */; };
 		A0FC65CE175D0BDF004620EB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A0FC65CC175D0BDF004620EB /* InfoPlist.strings */; };
@@ -37,7 +36,7 @@
 
 /* Begin PBXFileReference section */
 		71DC6F8B063E4819830E92EC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		832070FFF3404F48B40D7825 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		766AC981D552F671D1A90FE4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A0FC65A2175D0BDE004620EB /* SecureNSUserDefaults.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecureNSUserDefaults.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0FC65A5175D0BDE004620EB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A0FC65A7175D0BDE004620EB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -51,14 +50,14 @@
 		A0FC65B7175D0BDF004620EB /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		A0FC65B9175D0BDF004620EB /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		A0FC65BB175D0BDF004620EB /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		A0FC65C2175D0BDF004620EB /* SecureNSUserDefaultsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecureNSUserDefaultsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0FC65C3175D0BDF004620EB /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		A0FC65C2175D0BDF004620EB /* SecureNSUserDefaultsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecureNSUserDefaultsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0FC65CB175D0BDF004620EB /* SecureNSUserDefaultsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SecureNSUserDefaultsTests-Info.plist"; sourceTree = "<group>"; };
 		A0FC65CD175D0BDF004620EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A0FC65CF175D0BDF004620EB /* SecureNSUserDefaultsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecureNSUserDefaultsTests.h; sourceTree = "<group>"; };
 		A0FC65D0175D0BDF004620EB /* SecureNSUserDefaultsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecureNSUserDefaultsTests.m; sourceTree = "<group>"; };
 		A0FC65DB175D0C85004620EB /* NSUserDefaults+SecureAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+SecureAdditions.h"; sourceTree = "<group>"; };
 		A0FC65DC175D0C85004620EB /* NSUserDefaults+SecureAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+SecureAdditions.m"; sourceTree = "<group>"; };
+		F3B99D6A19E2EE058856FDE6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +76,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0FC65C4175D0BDF004620EB /* SenTestingKit.framework in Frameworks */,
 				A0FC65C5175D0BDF004620EB /* UIKit.framework in Frameworks */,
 				A0FC65C6175D0BDF004620EB /* Foundation.framework in Frameworks */,
 			);
@@ -86,6 +84,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5FEE1B40466992F7C9100752 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				766AC981D552F671D1A90FE4 /* Pods.debug.xcconfig */,
+				F3B99D6A19E2EE058856FDE6 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A0FC6599175D0BDE004620EB = {
 			isa = PBXGroup;
 			children = (
@@ -93,7 +100,7 @@
 				A0FC65C9175D0BDF004620EB /* SecureNSUserDefaultsTests */,
 				A0FC65A4175D0BDE004620EB /* Frameworks */,
 				A0FC65A3175D0BDE004620EB /* Products */,
-				832070FFF3404F48B40D7825 /* Pods.xcconfig */,
+				5FEE1B40466992F7C9100752 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,7 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				A0FC65A2175D0BDE004620EB /* SecureNSUserDefaults.app */,
-				A0FC65C2175D0BDF004620EB /* SecureNSUserDefaultsTests.octest */,
+				A0FC65C2175D0BDF004620EB /* SecureNSUserDefaultsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,7 +119,6 @@
 				A0FC65A5175D0BDE004620EB /* UIKit.framework */,
 				A0FC65A7175D0BDE004620EB /* Foundation.framework */,
 				A0FC65A9175D0BDE004620EB /* CoreGraphics.framework */,
-				A0FC65C3175D0BDF004620EB /* SenTestingKit.framework */,
 				71DC6F8B063E4819830E92EC /* libPods.a */,
 			);
 			name = Frameworks;
@@ -183,6 +189,7 @@
 				A0FC659F175D0BDE004620EB /* Frameworks */,
 				A0FC65A0175D0BDE004620EB /* Resources */,
 				71ECC3CE93F5428BB0412C31 /* Copy Pods Resources */,
+				8F725601D92AF0A4D41508C3 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -209,8 +216,8 @@
 			);
 			name = SecureNSUserDefaultsTests;
 			productName = SecureNSUserDefaultsTests;
-			productReference = A0FC65C2175D0BDF004620EB /* SecureNSUserDefaultsTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productReference = A0FC65C2175D0BDF004620EB /* SecureNSUserDefaultsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -218,7 +225,8 @@
 		A0FC659A175D0BDE004620EB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastTestingUpgradeCheck = 0720;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Niels Mouthaan";
 			};
 			buildConfigurationList = A0FC659D175D0BDE004620EB /* Build configuration list for PBXProject "SecureNSUserDefaults" */;
@@ -288,7 +296,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+		};
+		8F725601D92AF0A4D41508C3 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		A0FC65C0175D0BDF004620EB /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -301,7 +324,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+			shellScript = "";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -368,6 +391,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -379,7 +403,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -403,7 +427,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -412,11 +436,12 @@
 		};
 		A0FC65D5175D0BDF004620EB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 832070FFF3404F48B40D7825 /* Pods.xcconfig */;
+			baseConfigurationReference = 766AC981D552F671D1A90FE4 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SecureNSUserDefaults/SecureNSUserDefaults-Prefix.pch";
 				INFOPLIST_FILE = "SecureNSUserDefaults/SecureNSUserDefaults-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.nielsmouthaan.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -424,11 +449,12 @@
 		};
 		A0FC65D6175D0BDF004620EB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 832070FFF3404F48B40D7825 /* Pods.xcconfig */;
+			baseConfigurationReference = F3B99D6A19E2EE058856FDE6 /* Pods.release.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SecureNSUserDefaults/SecureNSUserDefaults-Prefix.pch";
 				INFOPLIST_FILE = "SecureNSUserDefaults/SecureNSUserDefaults-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.nielsmouthaan.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -439,15 +465,15 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SecureNSUserDefaults.app/SecureNSUserDefaults";
 				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SecureNSUserDefaults/SecureNSUserDefaults-Prefix.pch";
 				INFOPLIST_FILE = "SecureNSUserDefaultsTests/SecureNSUserDefaultsTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.nielsmouthaan.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
@@ -456,15 +482,15 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SecureNSUserDefaults.app/SecureNSUserDefaults";
 				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SecureNSUserDefaults/SecureNSUserDefaults-Prefix.pch";
 				INFOPLIST_FILE = "SecureNSUserDefaultsTests/SecureNSUserDefaultsTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.nielsmouthaan.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
