@@ -10,7 +10,7 @@ I highly recommend you to use CocoaPods for installing this category.
 ###CocoaPods
 
 ```ruby
-pod 'SecureNSUserDefaults', '~> 1.0.0'
+pod 'SecureNSUserDefaults', '~> 1.0.1'
 ```
 
 Import the header file everywhere you want to use SecureNSUserDefaults by placing te following code in the top of your file:
@@ -33,7 +33,7 @@ Before SecureNSUserDefaults can be used to get/save encrypted data, make sure to
 [[NSUserDefaults standardUserDefaults] setSecret:@"your_secret_goes_here"];
 ```
 
-Never store the secret somewhere on your file system or in your user preferences but instead put it somewhere static in your code. Preferably use a salt string in combination with something device specific (such as NSUUID's UUIDString method).
+Never store the secret somewhere on your file system or in your user preferences but instead put it somewhere static in your code. Preferably use a salt string in combination with something device specific.
 
 ###Store information
 Storing information is as easy as always. Prefix the normal NSUserDefaults methods with **secret** and your good to go. For example:
@@ -80,13 +80,13 @@ The class *SecureNSUserDefaultsTests* contains multiple test cases. Clone the en
 
 ## Contact
 
-If you have questions or suggestions, visit [www.nielsmouthaan.nl](http://nielsmouthaan.nl/who-am-i/) and use the contact form to contact me.
+If you have questions or suggestions, feel free to contact me via [Twitter](https://twitter.com/nielsmouthaan).
 
 ## Acknowledgements
 * Uses [CocoaSecurity](https://github.com/kelp404/CocoaSecurity) for encrypting/decrypting data.
 
 ## License (MIT)
-Copyright (c) 2013 Niels Mouthaan
+Copyright (c) 2016 Niels Mouthaan
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
