@@ -41,14 +41,14 @@ static double const kAnotherDouble = 98.76;
     [userDefaults synchronize];
     
     // Check value with good secret
-    STAssertTrue([userDefaults secretBoolForKey:kKey] == YES, @"Should be true at this point");
+    XCTAssertTrue([userDefaults secretBoolForKey:kKey] == YES, @"Should be true at this point");
     
     // Check value with other value
-    STAssertFalse([userDefaults secretBoolForKey:kKey] == NO, @"Should be false at this point");
+    XCTAssertFalse([userDefaults secretBoolForKey:kKey] == NO, @"Should be false at this point");
     
     // Check value with invalid secret
     [userDefaults setSecret:kBadSecret];
-    STAssertFalse([userDefaults secretBoolForKey:kKey] == YES, @"Should be false at this point");
+    XCTAssertFalse([userDefaults secretBoolForKey:kKey] == YES, @"Should be false at this point");
 }
 
 - (void)testData
@@ -61,15 +61,15 @@ static double const kAnotherDouble = 98.76;
     
     // Check value with good secret
     NSData *value = [userDefaults secretDataForKey:kKey];
-    STAssertTrue([value isEqualToData:[kString dataUsingEncoding:NSUTF8StringEncoding]], @"Should be true at this point");
+    XCTAssertTrue([value isEqualToData:[kString dataUsingEncoding:NSUTF8StringEncoding]], @"Should be true at this point");
     
     // Check value with other value
-    STAssertFalse([value isEqualToData:[kAnotherString dataUsingEncoding:NSUTF8StringEncoding]], @"Should be false at this point");
+    XCTAssertFalse([value isEqualToData:[kAnotherString dataUsingEncoding:NSUTF8StringEncoding]], @"Should be false at this point");
     
     // Check value with invalid secret
     [userDefaults setSecret:kBadSecret];
     value = [userDefaults secretDataForKey:kKey];
-    STAssertFalse([value isEqualToData:[kAnotherString dataUsingEncoding:NSUTF8StringEncoding]], @"Should be false at this point");
+    XCTAssertFalse([value isEqualToData:[kAnotherString dataUsingEncoding:NSUTF8StringEncoding]], @"Should be false at this point");
 }
 
 - (void)testDictionary
@@ -81,14 +81,14 @@ static double const kAnotherDouble = 98.76;
     [userDefaults synchronize];
     
     // Check value with good secret
-    STAssertTrue([[userDefaults secretDictionaryForKey:kKey] isEqualToDictionary:[NSDictionary dictionaryWithObject:kString forKey:kKey]], @"Should be true at this point");
+    XCTAssertTrue([[userDefaults secretDictionaryForKey:kKey] isEqualToDictionary:[NSDictionary dictionaryWithObject:kString forKey:kKey]], @"Should be true at this point");
     
     // Check value with other value
-    STAssertFalse([[userDefaults secretDictionaryForKey:kKey] isEqualToDictionary:[NSDictionary dictionaryWithObject:kAnotherString forKey:kKey]], @"Should be false at this point");
+    XCTAssertFalse([[userDefaults secretDictionaryForKey:kKey] isEqualToDictionary:[NSDictionary dictionaryWithObject:kAnotherString forKey:kKey]], @"Should be false at this point");
     
     // Check value with invalid secret
     [userDefaults setSecret:kBadSecret];
-    STAssertFalse([[userDefaults secretDictionaryForKey:kKey] isEqualToDictionary:[NSDictionary dictionaryWithObject:kString forKey:kKey]], @"Should be false at this point");
+    XCTAssertFalse([[userDefaults secretDictionaryForKey:kKey] isEqualToDictionary:[NSDictionary dictionaryWithObject:kString forKey:kKey]], @"Should be false at this point");
 }
 
 - (void)testFloat
@@ -100,14 +100,14 @@ static double const kAnotherDouble = 98.76;
     [userDefaults synchronize];
     
     // Check value with good secret
-    STAssertTrue([userDefaults secretFloatForKey:kKey] == kFloat, @"Should be true at this point");
+    XCTAssertTrue([userDefaults secretFloatForKey:kKey] == kFloat, @"Should be true at this point");
     
     // Check value with other value
-    STAssertFalse([userDefaults secretFloatForKey:kKey] == kAnotherFloat, @"Should be false at this point");
+    XCTAssertFalse([userDefaults secretFloatForKey:kKey] == kAnotherFloat, @"Should be false at this point");
     
     // Check value with invalid secret
     [userDefaults setSecret:kBadSecret];
-    STAssertFalse([userDefaults secretFloatForKey:kKey] == kFloat, @"Should be false at this point");
+    XCTAssertFalse([userDefaults secretFloatForKey:kKey] == kFloat, @"Should be false at this point");
 }
 
 - (void)testInteger
@@ -119,14 +119,14 @@ static double const kAnotherDouble = 98.76;
     [userDefaults synchronize];
     
     // Check value with good secret
-    STAssertTrue([userDefaults secretIntegerForKey:kKey] == kInteger, @"Should be true at this point");
+    XCTAssertTrue([userDefaults secretIntegerForKey:kKey] == kInteger, @"Should be true at this point");
     
     // Check value with other value
-    STAssertFalse([userDefaults secretIntegerForKey:kKey] == kAnotherInteger, @"Should be false at this point");
+    XCTAssertFalse([userDefaults secretIntegerForKey:kKey] == kAnotherInteger, @"Should be false at this point");
     
     // Check value with invalid secret
     [userDefaults setSecret:kBadSecret];
-    STAssertFalse([userDefaults secretIntegerForKey:kKey] == kInteger, @"Should be false at this point");
+    XCTAssertFalse([userDefaults secretIntegerForKey:kKey] == kInteger, @"Should be false at this point");
 }
 
 - (void)testStringArray
@@ -140,16 +140,16 @@ static double const kAnotherDouble = 98.76;
     // Check value with good secret
     NSArray *array1 = [userDefaults secretStringArrayForKey:kKey];
     NSArray *array2 = [NSArray arrayWithObjects:kString, kAnotherString, nil];
-    STAssertTrue([array1 isEqualToArray:array2], @"Should be true at this point");
+    XCTAssertTrue([array1 isEqualToArray:array2], @"Should be true at this point");
     
     // Check value with other value
     NSArray *array3 = [NSArray arrayWithObjects:kString, kString, nil];
-    STAssertFalse([array1 isEqualToArray:array3], @"Should be false at this point");
+    XCTAssertFalse([array1 isEqualToArray:array3], @"Should be false at this point");
     
     // Check value with invalid secret
     [userDefaults setSecret:kBadSecret];
     array1 = [userDefaults secretStringArrayForKey:kKey];
-    STAssertFalse([array1 isEqualToArray:array2], @"Should be false at this point");
+    XCTAssertFalse([array1 isEqualToArray:array2], @"Should be false at this point");
 }
 
 - (void)testString
@@ -161,14 +161,14 @@ static double const kAnotherDouble = 98.76;
     [userDefaults synchronize];
     
     // Check value with good secret
-    STAssertTrue([[userDefaults secretStringForKey:kKey] isEqualToString:kString], @"Should be true at this point");
+    XCTAssertTrue([[userDefaults secretStringForKey:kKey] isEqualToString:kString], @"Should be true at this point");
     
     // Check value with other value
-    STAssertFalse([[userDefaults secretStringForKey:kKey] isEqualToString:kAnotherString], @"Should be false at this point");
+    XCTAssertFalse([[userDefaults secretStringForKey:kKey] isEqualToString:kAnotherString], @"Should be false at this point");
     
     // Check value with invalid secret
     [userDefaults setSecret:kBadSecret];
-    STAssertFalse([[userDefaults secretStringForKey:kKey] isEqualToString:kString], @"Should be false at this point");
+    XCTAssertFalse([[userDefaults secretStringForKey:kKey] isEqualToString:kString], @"Should be false at this point");
     
 }
 
@@ -181,14 +181,14 @@ static double const kAnotherDouble = 98.76;
     [userDefaults synchronize];
     
     // Check value with good secret
-    STAssertTrue([userDefaults secretDoubleForKey:kKey] == kDouble, @"Should be true at this point");
+    XCTAssertTrue([userDefaults secretDoubleForKey:kKey] == kDouble, @"Should be true at this point");
     
     // Check value with other value
-    STAssertFalse([userDefaults secretDoubleForKey:kKey] == kAnotherDouble, @"Should be false at this point");
+    XCTAssertFalse([userDefaults secretDoubleForKey:kKey] == kAnotherDouble, @"Should be false at this point");
     
     // Check value with invalid secret
     [userDefaults setSecret:kBadSecret];
-    STAssertFalse([userDefaults secretDoubleForKey:kKey] == kDouble, @"Should be false at this point");
+    XCTAssertFalse([userDefaults secretDoubleForKey:kKey] == kDouble, @"Should be false at this point");
 }
 
 - (void)testURL
@@ -200,14 +200,14 @@ static double const kAnotherDouble = 98.76;
     [userDefaults synchronize];
     
     // Check value with good secret
-    STAssertTrue([[[userDefaults secretURLForKey:kKey] absoluteString] isEqualToString:[[NSURL URLWithString:kString] absoluteString]], @"Should be true at this point");
+    XCTAssertTrue([[[userDefaults secretURLForKey:kKey] absoluteString] isEqualToString:[[NSURL URLWithString:kString] absoluteString]], @"Should be true at this point");
     
     // Check value with other value
-    STAssertFalse([[[userDefaults secretURLForKey:kKey] absoluteString] isEqualToString:[[NSURL URLWithString:kAnotherString] absoluteString]], @"Should be false at this point");
+    XCTAssertFalse([[[userDefaults secretURLForKey:kKey] absoluteString] isEqualToString:[[NSURL URLWithString:kAnotherString] absoluteString]], @"Should be false at this point");
     
     // Check value with invalid secret
     [userDefaults setSecret:kBadSecret];
-    STAssertFalse([[[userDefaults secretURLForKey:kKey] absoluteString] isEqualToString:[[NSURL URLWithString:kString] absoluteString]], @"Should be false at this point");
+    XCTAssertFalse([[[userDefaults secretURLForKey:kKey] absoluteString] isEqualToString:[[NSURL URLWithString:kString] absoluteString]], @"Should be false at this point");
 }
 
 @end
