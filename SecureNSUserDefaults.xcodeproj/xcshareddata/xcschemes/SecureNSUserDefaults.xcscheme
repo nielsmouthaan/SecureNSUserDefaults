@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A0FC65C1175D0BDF004620EB"
-               BuildableName = "SecureNSUserDefaultsTests.octest"
+               BuildableName = "SecureNSUserDefaultsTests.xctest"
                BlueprintName = "SecureNSUserDefaultsTests"
                ReferencedContainer = "container:SecureNSUserDefaults.xcodeproj">
             </BuildableReference>
