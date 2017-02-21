@@ -121,7 +121,7 @@ static NSString *_secret = nil;
     NSData *data = [self objectForKey:defaultName];
     
     // Check if we have some data to decrypt, return nil if no
-    if(data == nil) {
+    if(data == nil || ![data isKindOfClass:[NSData class]]) {
         return nil;
     }
     
