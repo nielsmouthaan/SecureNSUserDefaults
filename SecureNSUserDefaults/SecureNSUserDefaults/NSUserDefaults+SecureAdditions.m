@@ -7,7 +7,7 @@
 //
 
 #import "NSUserDefaults+SecureAdditions.h"
-#import "CocoaSecurity.h"
+#import <CocoaSecurity/CocoaSecurity.h>
 
 #define kStoredObjectKey              @"storedObject"
 
